@@ -1,6 +1,6 @@
 <template lang="pug">
 .wrapper
-  wysiwyg(v-model="msg")
+  wysiwyg(v-model="msg", placeholder="hehe", labelText="Hey")
 </template>
 
 <script>

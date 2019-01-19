@@ -12,6 +12,7 @@
         )
 
     .editr--content(ref="content", contenteditable="true", tabindex="1", :placeholder="placeholder")
+    label {{labelText}}
 
 </template>
 
@@ -66,6 +67,10 @@ export default {
             type: String,
             default: "Enter text..."
         },
+        labelText: {
+            type: String,
+            default: "Title"
+        },
         options: Object
     },
 
@@ -74,7 +79,7 @@ export default {
 
     data () {
         return {
-            selection: ""
+            selection: "",
         }
     },
 
@@ -218,7 +223,7 @@ export default {
         if (this.mergedOptions.forcePlainTextOnPaste === true) {
             this.$refs.content.addEventListener("paste", this.onPaste);
         }
-        
+
         this.$refs.content.style.maxHeight = this.mergedOptions.maxHeight;
     },
 
