@@ -4,7 +4,7 @@
 ## Usage
 
 
-### Install vue-wysiwyg
+### Install vue-wysiwyg-hw
 
 ``` bash
 npm install vue-wysiwyg --save
@@ -18,7 +18,7 @@ yarn add vue-wysiwyg
 In your `main.js`:
 
 ```js
-import wysiwyg from "vue-wysiwyg";
+import wysiwyg from "vue-wysiwyg-hw";
 Vue.use(wysiwyg, {}); // config is optional. more below
 ```
 
